@@ -3515,11 +3515,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Projetos\\BlocoDeNotas\\NotesAPI\\NotesAPI.Business\\NotesAPI.Business.csproj",
+      "projectUniqueName": "C:\\Projetos\\Projeto C#\\BlocoDeNotas\\NotesAPI.Business\\NotesAPI.Business.csproj",
       "projectName": "NotesAPI.Business",
-      "projectPath": "C:\\Projetos\\BlocoDeNotas\\NotesAPI\\NotesAPI.Business\\NotesAPI.Business.csproj",
+      "projectPath": "C:\\Projetos\\Projeto C#\\BlocoDeNotas\\NotesAPI.Business\\NotesAPI.Business.csproj",
       "packagesPath": "C:\\Users\\lucy.mattos\\.nuget\\packages\\",
-      "outputPath": "C:\\Projetos\\BlocoDeNotas\\NotesAPI\\NotesAPI.Business\\obj\\",
+      "outputPath": "C:\\Projetos\\Projeto C#\\BlocoDeNotas\\NotesAPI.Business\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\lucy.mattos\\AppData\\Roaming\\NuGet\\NuGet.Config",

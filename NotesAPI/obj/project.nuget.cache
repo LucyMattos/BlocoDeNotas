@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "fMYV87W403VZKwQgMRTyLiwbb/6M8t649CF71FmvjAGRuUSxTYEuefWO3vU7KzqTja9tEWX3eoL6g+ni/PNXAA==",
+  "dgSpecHash": "EP8PYjjtsOpXXUPCDqGC7FYEeunATHr8lX0Q1SaxnpNJLdE8FP6umXP57yDD6wghfMDVE9xgaZt/rINg9p7Nfg==",
   "success": true,
-  "projectFilePath": "C:\\Projetos\\BlocoDeNotas\\NotesAPI\\NotesAPI\\NotesAPI.csproj",
+  "projectFilePath": "C:\\Projetos\\Projeto C#\\BlocoDeNotas\\NotesAPI\\NotesAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\lucy.mattos\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\lucy.mattos\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

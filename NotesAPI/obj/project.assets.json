@@ -3768,11 +3768,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Projetos\\BlocoDeNotas\\NotesAPI\\NotesAPI\\NotesAPI.csproj",
+      "projectUniqueName": "C:\\Projetos\\Projeto C#\\BlocoDeNotas\\NotesAPI\\NotesAPI.csproj",
       "projectName": "NotesAPI",
-      "projectPath": "C:\\Projetos\\BlocoDeNotas\\NotesAPI\\NotesAPI\\NotesAPI.csproj",
+      "projectPath": "C:\\Projetos\\Projeto C#\\BlocoDeNotas\\NotesAPI\\NotesAPI.csproj",
       "packagesPath": "C:\\Users\\lucy.mattos\\.nuget\\packages\\",
-      "outputPath": "C:\\Projetos\\BlocoDeNotas\\NotesAPI\\NotesAPI\\obj\\",
+      "outputPath": "C:\\Projetos\\Projeto C#\\BlocoDeNotas\\NotesAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\lucy.mattos\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -3789,8 +3789,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Projetos\\BlocoDeNotas\\NotesAPI\\NotesAPI.Data\\NotesAPI.Data.csproj": {
-              "projectPath": "C:\\Projetos\\BlocoDeNotas\\NotesAPI\\NotesAPI.Data\\NotesAPI.Data.csproj"
+            "C:\\Projetos\\Projeto C#\\BlocoDeNotas\\NotesAPI.Data\\NotesAPI.Data.csproj": {
+              "projectPath": "C:\\Projetos\\Projeto C#\\BlocoDeNotas\\NotesAPI.Data\\NotesAPI.Data.csproj"
             }
           }
         }
