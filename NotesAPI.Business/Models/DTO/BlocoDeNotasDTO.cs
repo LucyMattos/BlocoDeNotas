@@ -1,7 +1,7 @@
-﻿using NotesAPI.Business.models.Entities;
+﻿using NotesAPI.Business.Models.Entities;
 using System.ComponentModel.DataAnnotations;
 
-namespace NotesAPI.Business.models.DTO
+namespace NotesAPI.Business.Models.DTO
 {
     public  class BlocoDeNotasDTO
     {

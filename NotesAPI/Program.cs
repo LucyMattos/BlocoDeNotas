@@ -4,7 +4,7 @@ using NotesAPI.Data.Context;
 var builder = WebApplication.CreateBuilder(args);
 
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
-builder.Services.AddDbContext<BlocoDeNotasContext>(options =>
+builder.Services.AddDbContext<NotesContext>(options =>
 {
     options.EnableSensitiveDataLogging(true);
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
