@@ -13,11 +13,6 @@ namespace NotesAPI.Data.Repository
             this.context = context;
         }
 
-        public async Task<List<BlocoDeNotas>> GetAllAsync()
-        {
-            return await context.BlocoDeNotas.ToListAsync();
-        }
-
         public async Task<BlocoDeNotas> GetAsync(int id)
         {
             return await context.BlocoDeNotas.Where(bloco => bloco.Id == id).FirstOrDefaultAsync();
