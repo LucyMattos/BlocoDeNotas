@@ -12,7 +12,7 @@ builder.Services.AddDbContext<NotesContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
 }, ServiceLifetime.Transient);
 
-
+builder.Services.AddDIServices();
 builder.Services.AddAutoMapper(typeof(ProfileConfiguration));
 
 // Add services to the container.

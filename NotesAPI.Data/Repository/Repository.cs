@@ -22,6 +22,13 @@ namespace NotesAPI.Data.Repository
             return r.Entity;
         }
 
+        public async Task DeleteAsync(T entity, bool saveChanges = true)
+        {
+            _context.Set<T>().Remove(entity);
+            if (saveChanges)
+                await _context.SaveChangesAsync();
+        }
+
         public virtual async Task<IEnumerable<T>> GetAllAsync()
         {
             return await _context.Set<T>().ToListAsync();
