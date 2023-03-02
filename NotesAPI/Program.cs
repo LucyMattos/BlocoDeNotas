@@ -1,5 +1,7 @@
 using Microsoft.EntityFrameworkCore;
+using NotesAPI.Configuration;
 using NotesAPI.Data.Context;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,6 +12,8 @@ builder.Services.AddDbContext<NotesContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
 }, ServiceLifetime.Transient);
 
+
+builder.Services.AddAutoMapper(typeof(ProfileConfiguration));
 
 // Add services to the container.
 

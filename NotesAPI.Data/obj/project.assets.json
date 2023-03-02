@@ -1155,20 +1155,6 @@
             "rid": "win"
           }
         }
-      },
-      "NotesAPI.Business/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore": "7.0.3",
-          "Microsoft.EntityFrameworkCore.SqlServer": "7.0.3"
-        },
-        "compile": {
-          "bin/placeholder/NotesAPI.Business.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/NotesAPI.Business.dll": {}
-        }
       }
     }
   },
@@ -3514,19 +3500,13 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
-    },
-    "NotesAPI.Business/1.0.0": {
-      "type": "project",
-      "path": "../NotesAPI.Business/NotesAPI.Business.csproj",
-      "msbuildProject": "../NotesAPI.Business/NotesAPI.Business.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
       "Microsoft.EntityFrameworkCore >= 7.0.3",
       "Microsoft.EntityFrameworkCore.SqlServer >= 7.0.3",
-      "Microsoft.EntityFrameworkCore.Tools >= 7.0.3",
-      "NotesAPI.Business >= 1.0.0"
+      "Microsoft.EntityFrameworkCore.Tools >= 7.0.3"
     ]
   },
   "packageFolders": {
@@ -3555,11 +3535,7 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {
-            "C:\\Projetos\\Projeto C#\\BlocoDeNotas\\NotesAPI.Business\\NotesAPI.Business.csproj": {
-              "projectPath": "C:\\Projetos\\Projeto C#\\BlocoDeNotas\\NotesAPI.Business\\NotesAPI.Business.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {

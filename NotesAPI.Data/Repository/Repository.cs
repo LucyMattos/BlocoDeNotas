@@ -1,5 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using NotesAPI.Business.Models.Entities;
+using NotesAPI.Data.Models.Entities;
 using NotesAPI.Data.Context;
 using NotesAPI.Data.Interface;
 

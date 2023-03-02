@@ -1,5 +1,4 @@
-﻿using NotesAPI.Business.Models.Entities;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace NotesAPI.Business.Models.DTO
 {
@@ -12,6 +11,6 @@ namespace NotesAPI.Business.Models.DTO
         [StringLength(100)]
         public string? Titulo { get; set; }
 
-        public IEnumerable<BlocoDeNotasItens>? Itens { get; set; }
+        public IEnumerable<BlocoDeNotasItensDTO>? Itens { get; set; }
     }
 }

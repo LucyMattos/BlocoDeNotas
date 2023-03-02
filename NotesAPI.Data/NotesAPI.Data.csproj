@@ -15,8 +15,4 @@
     </PackageReference>
   </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\NotesAPI.Business\NotesAPI.Business.csproj" />
-  </ItemGroup>
-
 </Project>

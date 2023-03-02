@@ -1,4 +1,4 @@
-﻿using NotesAPI.Business.Models.Entities;
+﻿using NotesAPI.Data.Models.Entities;
 
 namespace NotesAPI.Data.Interface
 {

@@ -1,4 +1,4 @@
-﻿namespace NotesAPI.Business.Models.Entities
+﻿namespace NotesAPI.Data.Models.Entities
 {
     public class BlocoDeNotasItens : Base
     {
