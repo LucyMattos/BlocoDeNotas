@@ -3,7 +3,6 @@ using NotesAPI.Business.Interface;
 using NotesAPI.Business.Models.DTO;
 using NotesAPI.Data.Interface;
 using NotesAPI.Data.Models.Entities;
-using System;
 
 namespace NotesAPI.Business.Service
 {
