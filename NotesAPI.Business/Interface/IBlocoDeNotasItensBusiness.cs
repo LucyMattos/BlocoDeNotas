@@ -1,5 +1,6 @@
 ﻿
 using NotesAPI.Business.Models.DTO;
+using NotesAPI.Business.Models.ViewModel;
 
 namespace NotesAPI.Business.Interface
 {
@@ -7,8 +8,8 @@ namespace NotesAPI.Business.Interface
     {
         Task<BlocoDeNotasItensDTO> GetAsync(int id);
         Task<List<BlocoDeNotasItensDTO>> GetAllAsync();
-        Task<BlocoDeNotasItensDTO> AddAsync(BlocoDeNotasItensDTO notas);
-        Task UpdateAsync(BlocoDeNotasItensDTO notas);
+        Task<BlocoDeNotasItensDTO> AddAsync(AddBlocoDeNotasItens notas);
+        Task UpdateAsync(UpdateBlocoDeNotasItens notas);
         Task DeleteAsync(int id);
     }
 }

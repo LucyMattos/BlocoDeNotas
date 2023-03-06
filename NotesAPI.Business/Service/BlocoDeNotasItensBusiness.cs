@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using NotesAPI.Business.Interface;
 using NotesAPI.Business.Models.DTO;
+using NotesAPI.Business.Models.ViewModel;
 using NotesAPI.Data.Interface;
 using NotesAPI.Data.Models.Entities;
 
@@ -30,7 +31,7 @@ namespace NotesAPI.Business.Service
      
         }
 
-        public async Task<BlocoDeNotasItensDTO> AddAsync(BlocoDeNotasItensDTO notas)
+        public async Task<BlocoDeNotasItensDTO> AddAsync(AddBlocoDeNotasItens notas)
         {
             var entity = _mapper.Map<BlocoDeNotasIten>(notas);
             entity = await _blocoDeNotasItensRepository.AddAsync(entity);
@@ -38,7 +39,7 @@ namespace NotesAPI.Business.Service
             return _mapper.Map<BlocoDeNotasItensDTO>(entity);
         }
 
-        public async Task UpdateAsync(BlocoDeNotasItensDTO notas)
+        public async Task UpdateAsync(UpdateBlocoDeNotasItens notas)
         {
             var data = await _blocoDeNotasItensRepository.GetAsync(notas.Id);
             if (data == null)

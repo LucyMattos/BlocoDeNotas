@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using NotesAPI.Business.Interface;
 using NotesAPI.Business.Models.DTO;
+using NotesAPI.Business.Models.ViewModel;
 using NotesAPI.Business.Service;
 
 namespace NotesAPI.Controllers
@@ -37,16 +38,16 @@ namespace NotesAPI.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult<BlocoDeNotasItensDTO>> Add(BlocoDeNotasItensDTO notas)
+        public async Task<ActionResult<BlocoDeNotasItensDTO>> Add(AddBlocoDeNotasItens item)
         {
-            var data = await _blocoDeNotasItensBusiness.AddAsync(notas);
+            var data = await _blocoDeNotasItensBusiness.AddAsync(item);
             return Ok(data);
         }
 
         [HttpPut]
-        public async Task<ActionResult<BlocoDeNotasItensDTO>> Update(BlocoDeNotasItensDTO notas)
+        public async Task<ActionResult<BlocoDeNotasItensDTO>> Update(UpdateBlocoDeNotasItens item)
         {
-            await _blocoDeNotasItensBusiness.UpdateAsync(notas);
+            await _blocoDeNotasItensBusiness.UpdateAsync(item);
             return Ok();
         }
 
