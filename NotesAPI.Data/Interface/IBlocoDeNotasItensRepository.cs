@@ -1,8 +1,8 @@
 ﻿using NotesAPI.Data.Models.Entities;
 namespace NotesAPI.Data.Interface
 {
-    public interface IBlocoDeNotasItensRepository : IRepository<BlocoDeNotasItens>
+    public interface IBlocoDeNotasItensRepository : IRepository<BlocoDeNotasIten>
     {
-        Task<BlocoDeNotasItens> GetAsync(int id);
+        Task<BlocoDeNotasIten> GetAsync(int id);
     }
 }

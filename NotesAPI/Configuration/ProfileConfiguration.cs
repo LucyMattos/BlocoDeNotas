@@ -8,8 +8,8 @@ namespace NotesAPI.Configuration
     {
         public ProfileConfiguration()
         {
-            CreateMap<BlocoDeNotas, BlocoDeNotasDTO>().ReverseMap();
-            CreateMap<BlocoDeNotasItens, BlocoDeNotasItensDTO>().ReverseMap();
+            CreateMap<BlocoDeNota, BlocoDeNotasDTO>().ReverseMap();
+            CreateMap<BlocoDeNotasIten, BlocoDeNotasItensDTO>().ReverseMap();
           
         }
     }

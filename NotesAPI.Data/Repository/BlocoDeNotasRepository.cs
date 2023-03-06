@@ -5,18 +5,18 @@ using NotesAPI.Data.Interface;
 
 namespace NotesAPI.Data.Repository
 {
-    public class BlocoDeNotasRepository : Repository<BlocoDeNotas>, IBlocoDeNotasRepository
+    public class BlocoDeNotasRepository : Repository<BlocoDeNota>, IBlocoDeNotasRepository
     {
-        private readonly NotesContext _context;
-        public BlocoDeNotasRepository(NotesContext context) : base(context)
+        private readonly NotasContext _context;
+        public BlocoDeNotasRepository(NotasContext context) : base(context)
         {
             this._context = context;
         }
 
-        public async Task<BlocoDeNotas> GetAsync(int id)
+        public async Task<BlocoDeNota> GetAsync(int id)
         {
             return await _context.BlocoDeNotas.Where(bloco => bloco.Id == id)
-                .Include(n => n.Itens)
+                .Include(n => n.BlocoDeNotasItens)
                 .FirstOrDefaultAsync();
             
         }

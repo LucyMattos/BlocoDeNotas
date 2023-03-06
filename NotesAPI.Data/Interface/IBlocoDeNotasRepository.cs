@@ -2,8 +2,8 @@
 
 namespace NotesAPI.Data.Interface
 {
-    public interface IBlocoDeNotasRepository : IRepository<BlocoDeNotas>
+    public interface IBlocoDeNotasRepository : IRepository<BlocoDeNota>
     {
-        Task<BlocoDeNotas> GetAsync(int id);
+        Task<BlocoDeNota> GetAsync(int id);
     }
 }

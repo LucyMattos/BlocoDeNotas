@@ -7,9 +7,9 @@ namespace NotesAPI.Data.Repository
 {
     public class Repository<T> : IRepository<T> where T : Base
     {
-        private readonly NotesContext _context;
+        private readonly NotasContext _context;
 
-        public Repository(NotesContext context)
+        public Repository(NotasContext context)
         {
             _context = context;
         }

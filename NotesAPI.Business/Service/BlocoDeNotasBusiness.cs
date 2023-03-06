@@ -30,7 +30,7 @@ namespace NotesAPI.Business.Service
         }
         public async Task<BlocoDeNotasDTO> AddAsync(BlocoDeNotasDTO notas)
         {
-            var entity = _mapper.Map<BlocoDeNotas>(notas);
+            var entity = _mapper.Map<BlocoDeNota>(notas);
             entity = await _blocoDeNotasRepository.AddAsync(entity);
 
             return _mapper.Map<BlocoDeNotasDTO>(entity);
