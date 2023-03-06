@@ -7,6 +7,10 @@
             Titulo = titulo;
         }
 
+        private BlocoDeNota()
+        {
+
+        }
 
         public string ? Titulo { get; set; } = null!;
 

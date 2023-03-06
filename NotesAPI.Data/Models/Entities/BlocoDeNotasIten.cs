@@ -9,6 +9,11 @@
             Descricao = descricao;
         }
 
+        private BlocoDeNotasIten()
+        {
+
+        }
+
         public int IdBlocoDeNotas { get; set; }
 
         public string? Titulo { get; set; } = null!;
