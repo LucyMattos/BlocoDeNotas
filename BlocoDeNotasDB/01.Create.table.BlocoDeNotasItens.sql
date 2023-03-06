@@ -16,12 +16,11 @@ END
 
 CREATE TABLE BlocoDeNotasItens
 ( 
-	Id INT primary key,
+	Id INT primary key identity,
 	IdBlocoDeNotas INT NOT NULL,
 	Titulo VARCHAR (100) NOT NULL,
 	Descricao VARCHAR (600) NOT NULL
 )
-
 
 
 

@@ -17,7 +17,7 @@ namespace NotesAPI.Controllers
         }
 
         [HttpGet()]
-        public async Task<ActionResult<List<BlocoDeNotasBusiness>>> GetAll()
+        public async Task<ActionResult<List<BlocoDeNotasDTO>>> GetAll()
         {
             var data = await _blocoDeNotasBusiness.GetAllAsync();
             if (data == null)
@@ -27,7 +27,7 @@ namespace NotesAPI.Controllers
         }
 
         [HttpGet("{id:int}")]
-        public async Task<ActionResult<BlocoDeNotasBusiness>> GetById(int id)
+        public async Task<ActionResult<BlocoDeNotasDTO>> GetById(int id)
         {
             var data = await _blocoDeNotasBusiness.GetAsync(id);
             if (data == null)
@@ -36,14 +36,14 @@ namespace NotesAPI.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult<BlocoDeNotasBusiness>> Add(BlocoDeNotasDTO notas)
+        public async Task<ActionResult<BlocoDeNotasDTO>> Add(BlocoDeNotasDTO notas)
         {
             var data = await _blocoDeNotasBusiness.AddAsync(notas);
             return Ok(data);
         }
 
         [HttpPut]
-        public async Task<ActionResult<BlocoDeNotasBusiness>> Update(BlocoDeNotasDTO notas)
+        public async Task<ActionResult<BlocoDeNotasDTO>> Update(BlocoDeNotasDTO notas)
         {
             await _blocoDeNotasBusiness.UpdateAsync(notas);
             return Ok();
