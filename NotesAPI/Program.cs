@@ -6,11 +6,11 @@ using NotesAPI.Data.Context;
 var builder = WebApplication.CreateBuilder(args);
 
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
-builder.Services.AddDbContext<NotesContext>(options =>
-{
-    options.EnableSensitiveDataLogging(true);
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
-}, ServiceLifetime.Transient);
+//builder.Services.AddDbContext<NotesContext>(options =>
+//{
+//    options.EnableSensitiveDataLogging(true);
+//    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
+//}, ServiceLifetime.Transient);
 
 builder.Services.AddDIServices();
 builder.Services.AddAutoMapper(typeof(ProfileConfiguration));

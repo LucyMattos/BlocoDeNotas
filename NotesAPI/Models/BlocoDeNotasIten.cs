@@ -11,5 +11,7 @@ public partial class BlocoDeNotasIten
 
     public string Titulo { get; set; } = null!;
 
-    public string Descricao { get; set; } = null!;
+    public string? Descricao { get; set; }
+
+    public virtual BlocoDeNota IdBlocoDeNotasNavigation { get; set; } = null!;
 }
