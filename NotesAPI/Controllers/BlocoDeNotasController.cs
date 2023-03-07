@@ -3,6 +3,7 @@ using NotesAPI.Business.Interface;
 using NotesAPI.Business.Models.DTO;
 using NotesAPI.Business.Models.ViewModel;
 using NotesAPI.Business.Service;
+using Swashbuckle.AspNetCore.Annotations;
 
 namespace NotesAPI.Controllers
 {
@@ -18,6 +19,7 @@ namespace NotesAPI.Controllers
         }
 
         [HttpGet()]
+        [SwaggerOperation(Description = "Busca todas as anotações.")]
         public async Task<ActionResult<List<BlocoDeNotasDTO>>> GetAll()
         {
             var data = await _blocoDeNotasBusiness.GetAllAsync();
@@ -27,7 +29,9 @@ namespace NotesAPI.Controllers
             return Ok(data);
         }
 
+
         [HttpGet("{id:int}")]
+        [SwaggerOperation(Description = "Busca apenas uma anotação.")]
         public async Task<ActionResult<BlocoDeNotasDTO>> GetById(int id)
         {
             var data = await _blocoDeNotasBusiness.GetAsync(id);
@@ -37,6 +41,7 @@ namespace NotesAPI.Controllers
         }
 
         [HttpPost]
+        [SwaggerOperation(Description = "Cria uma nova anotação.")]
         public async Task<ActionResult<BlocoDeNotasDTO>> Add(AddBlocoDeNotas notas)
         {
             var data = await _blocoDeNotasBusiness.AddAsync(notas);
@@ -44,6 +49,7 @@ namespace NotesAPI.Controllers
         }
 
         [HttpPut]
+        [SwaggerOperation(Description = "Atualiza uma anotação já existente.")]
         public async Task<ActionResult<BlocoDeNotasDTO>> Update(UpdateBlocoDeNotas notas)
         {
             await _blocoDeNotasBusiness.UpdateAsync(notas);
@@ -51,6 +57,7 @@ namespace NotesAPI.Controllers
         }
 
         [HttpDelete("{id:int}")]
+        [SwaggerOperation(Description = "Exclui uma anotação.")]
         public async Task<ActionResult> DeleteAsync(int id)
         {
             await _blocoDeNotasBusiness.DeleteAsync(id);

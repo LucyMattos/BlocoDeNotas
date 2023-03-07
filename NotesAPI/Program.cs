@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using Microsoft.OpenApi.Models;
 using NotesAPI.Configuration;
 using NotesAPI.Data.Context;
 
@@ -20,7 +21,17 @@ builder.Services.AddAutoMapper(typeof(ProfileConfiguration));
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+
+builder.Services.AddSwaggerGen(options =>
+{
+    options.EnableAnnotations();
+    options.SwaggerDoc("v1", new OpenApiInfo
+    {
+        Version = "v1",
+        Title = "Bloco De Notas API",
+        Description = "An ASP.NET Core Web API for creating annotations.",
+    });
+});
 
 builder.Services.AddCors(opt =>
 {

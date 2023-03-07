@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "7vwxSYIjwj3oNB5ghM7m84G00gnrEVBItSSzFN55ymzblYUm/hxmVKglip6PVSkp7HzgYWWfp8IRrlYNo1Y7Cg==",
+  "dgSpecHash": "Z+HGOT3gY5sEgP/P31wqiaKSut5mIfNogbPfcv9SeSFBti8f/w2e9f2O9nySG+WMnTToQQY0u1HN96Gtz/6R0w==",
   "success": true,
   "projectFilePath": "C:\\Projetos\\Projeto C#\\BlocoDeNotas\\NotesAPI\\NotesAPI.csproj",
   "expectedPackageFiles": [
@@ -47,8 +47,9 @@
     "C:\\Users\\lucy.mattos\\.nuget\\packages\\microsoft.win32.systemevents\\5.0.0\\microsoft.win32.systemevents.5.0.0.nupkg.sha512",
     "C:\\Users\\lucy.mattos\\.nuget\\packages\\mono.texttemplating\\2.2.1\\mono.texttemplating.2.2.1.nupkg.sha512",
     "C:\\Users\\lucy.mattos\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.3\\swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
-    "C:\\Users\\lucy.mattos\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.2.3\\swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
-    "C:\\Users\\lucy.mattos\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.2.3\\swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
+    "C:\\Users\\lucy.mattos\\.nuget\\packages\\swashbuckle.aspnetcore.annotations\\6.5.0\\swashbuckle.aspnetcore.annotations.6.5.0.nupkg.sha512",
+    "C:\\Users\\lucy.mattos\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.5.0\\swashbuckle.aspnetcore.swagger.6.5.0.nupkg.sha512",
+    "C:\\Users\\lucy.mattos\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.5.0\\swashbuckle.aspnetcore.swaggergen.6.5.0.nupkg.sha512",
     "C:\\Users\\lucy.mattos\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.2.3\\swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512",
     "C:\\Users\\lucy.mattos\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
     "C:\\Users\\lucy.mattos\\.nuget\\packages\\system.codedom\\4.4.0\\system.codedom.4.4.0.nupkg.sha512",
