@@ -8,7 +8,7 @@ namespace NotesAPI.Business.Interface
         Task<BlocoDeNotasDTO> GetAsync (int id);
         Task<List<BlocoDeNotasDTO>> GetAllAsync();
         Task<BlocoDeNotasDTO> AddAsync(AddBlocoDeNotas notas);
-        Task UpdateAsync (UpdateBlocoDeNotas notas);
+        Task<BlocoDeNotasDTO> UpdateAsync (UpdateBlocoDeNotas notas);
         Task DeleteAsync(int id);
     }
 }

@@ -22,6 +22,7 @@ namespace NotesAPI.Business.Service
         {
             var data = await _blocoDeNotasRepository.GetAllAsync();
             return _mapper.Map<List<BlocoDeNotasDTO>>(data);
+
         }
 
         public async Task<BlocoDeNotasDTO> GetAsync(int id)
@@ -37,14 +38,16 @@ namespace NotesAPI.Business.Service
             return _mapper.Map<BlocoDeNotasDTO>(entity);
         }
 
-        public async Task UpdateAsync(UpdateBlocoDeNotas notas)
+        public async Task<BlocoDeNotasDTO> UpdateAsync(UpdateBlocoDeNotas notas)
         {
             var data = await _blocoDeNotasRepository.GetAsync(notas.Id);
             if (data == null)
-                return;
+                return new BlocoDeNotasDTO();
 
-            var entity = _mapper.Map(notas, data);
-            await _blocoDeNotasRepository.UpdateAsync(entity);
+            var entityUp = _mapper.Map(notas, data);
+            var entidade = await _blocoDeNotasRepository.UpdateAsync(entityUp);
+            return _mapper.Map<BlocoDeNotasDTO>(entidade);
+
         }
 
         public async Task DeleteAsync(int id)

@@ -21,9 +21,6 @@ namespace NotesAPI.Configuration
             CreateMap<AddBlocoDeNotas, BlocoDeNota>().ReverseMap();
             CreateMap<UpdateBlocoDeNotas, BlocoDeNotasDTO>().ReverseMap();
             CreateMap<UpdateBlocoDeNotas, BlocoDeNota>().ReverseMap();
-
-           
-          
         }
     }
 }

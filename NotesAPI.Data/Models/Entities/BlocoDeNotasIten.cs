@@ -14,11 +14,11 @@
 
         }
 
-        public int IdBlocoDeNotas { get; set; }
+        public int IdBlocoDeNotas { get; private set; }
 
-        public string? Titulo { get; set; } = null!;
+        public string? Titulo { get; private set; } = null!;
 
-        public string? Descricao { get; set; }
+        public string? Descricao { get; private set; }
 
         public virtual BlocoDeNota IdBlocoDeNotasNavigation { get; set; } = null!;
     }

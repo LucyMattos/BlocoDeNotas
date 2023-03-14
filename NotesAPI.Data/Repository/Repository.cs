@@ -34,11 +34,12 @@ namespace NotesAPI.Data.Repository
             return await _context.Set<T>().ToListAsync();
         }
 
-        public virtual async Task UpdateAsync(T entity, bool saveChanges = true)
+        public virtual async Task<T> UpdateAsync(T entity, bool saveChanges = true)
         {
-            _context.Set<T>().Update(entity);
+            var r = _context.Set<T>().Update(entity);
             if (saveChanges)
                 await _context.SaveChangesAsync();
+            return r.Entity;
         }
     }
 }

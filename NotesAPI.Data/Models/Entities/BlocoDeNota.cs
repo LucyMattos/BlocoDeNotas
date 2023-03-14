@@ -12,7 +12,7 @@
 
         }
 
-        public string ? Titulo { get; set; } = null!;
+        public string ? Titulo { get; private set; } = null!;
 
         public virtual ICollection<BlocoDeNotasIten> BlocoDeNotasItens { get; } = new List<BlocoDeNotasIten>();
 
